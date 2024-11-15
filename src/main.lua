@@ -14,3 +14,5 @@ function Test1()
   lu.assertEquals(math_functions.add(3,5), 8)
     print(inspect(math_functions.add(3,5)))
 end
+
+Test1()
