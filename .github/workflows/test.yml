@@ -28,8 +28,9 @@ jobs:
         lua -l src/setup src/main.lua
 
     - name: run test.lua
-      run: |
-        luarocks test
+      run: luarocks test
+      env:
+        LUA_INIT: "@src/setup.lua"
         
     # - name: setup 
     #   run: |
