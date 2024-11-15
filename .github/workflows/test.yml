@@ -19,9 +19,13 @@ jobs:
       run: |
         luarocks lint lua-dev-1.rockspec
 
-    - name: running main.lua
+    - name: install dependencies
       run: |
         luarocks install --deps-only lua-dev-1.rockspec
+        
+    - name: run main.lua
+      run: |
+        lua src/main.lua
 
     # - name: setup 
     #   run: |
