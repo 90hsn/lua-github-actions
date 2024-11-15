@@ -10,4 +10,6 @@ function math_functions.add(a, b)
     return a + b
 end
 
-return math_functions
+function Test1()
+  lu.assertEquals(math_functions.add(3,5), 8)
+end
