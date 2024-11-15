@@ -17,11 +17,11 @@ jobs:
 
     - name: linting rockspec
       run: |
-        luarocks lint lua.rockspec
+        luarocks lint lua-dev-1.rockspec
 
     - name: running main.lua
       run: |
-        luarocks install --deps-only lua.rockspec
+        luarocks install --deps-only lua-dev-1.rockspec
 
     # - name: setup 
     #   run: |
