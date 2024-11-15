@@ -1,4 +1,4 @@
--- lua-series-dev-1.rockspec
+-- lua-dev-1.rockspec
 rockspec_format = "3.0"
 package = "lua-series"
 version = "dev-1"
