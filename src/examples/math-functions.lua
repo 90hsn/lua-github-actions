@@ -1,6 +1,6 @@
 local MathFunctions = {}
 
-function MathFunctions:add(a, b)
+function MathFunctions.add(a, b)
     return a + b
 end
 
