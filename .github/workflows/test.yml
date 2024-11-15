@@ -25,7 +25,7 @@ jobs:
         
     - name: run main.lua
       run: |
-        lua src/main.lua
+        lua -l src/setup src/main.lua
 
     # - name: setup 
     #   run: |
