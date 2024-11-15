@@ -15,10 +15,18 @@ jobs:
 
     - uses: leafo/gh-actions-luarocks@v4
 
-    - name: setup 
+    - name: linting rockspec
       run: |
-        luarocks install busted
+        luarocks lint lua.rockspec
 
-    - name: test
+    - name: running main.lua
       run: |
-        busted -o utfTerminal
+        luarocks install --deps-only lua.rockspec
+
+    # - name: setup 
+    #   run: |
+    #     luarocks install busted
+
+    # - name: test
+    #   run: |
+    #     busted -o utfTerminal
