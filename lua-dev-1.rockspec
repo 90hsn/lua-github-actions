@@ -11,7 +11,8 @@ description = {
 }
 dependencies = {
    "lua >= 5.1, < 5.5",
-   "inspect >= 3.1"
+   "inspect >= 3.1",
+   "lua-path >= 0.3"
 }
 build = {
    type = "builtin",
