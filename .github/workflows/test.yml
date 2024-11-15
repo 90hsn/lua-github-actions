@@ -27,6 +27,10 @@ jobs:
       run: |
         lua -l src/setup src/main.lua
 
+    - name: run test.lua
+      run: |
+        lua dofile("src/test.lua")
+        
     # - name: setup 
     #   run: |
     #     luarocks install busted
