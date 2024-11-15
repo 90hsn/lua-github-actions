@@ -9,11 +9,11 @@ jobs:
     steps:
     - uses: actions/checkout@master
 
-    - uses: leafo/gh-actions-lua@v5
+    - uses: leafo/gh-actions-lua@vlatest
       with:
         luaVersion: "5.1"
 
-    - uses: leafo/gh-actions-luarocks@v2
+    - uses: leafo/gh-actions-luarocks@latest
 
     - name: setup 
       run: |
