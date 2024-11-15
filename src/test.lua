@@ -1,7 +1,4 @@
-local math_functions = {}
+TestMath = require("examples/math-functions")
 
-function math_functions.add(a, b)
-    return a + b
-end
-
-print(math_functions.add(4,6))
+local lu = require("luaunit")
+os.exit(lu.LuaUnit.run())
